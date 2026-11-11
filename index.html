@@ -11,7 +11,7 @@
   html, body { height: 100%; }
   body { background: #050e1c; font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #fff; height: 100vh; height: 100dvh; overflow: hidden; padding: 8px; }
   .wrap { max-width: 480px; height: 100%; margin: 0 auto; padding: 12px; display: flex; flex-direction: column; justify-content: center; border: 3px solid #8B5CF6; border-radius: 28px; box-shadow: 0 0 28px rgba(139,92,246,.35); }
-  .card { position: relative; width: min(100%, calc((var(--v) - 300px) * 0.5625)); aspect-ratio: 9 / 16; margin: 0 auto; flex: 0 0 auto; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,.55); }
+  .card { position: relative; width: min(100%, calc((var(--v) - 360px) * 0.5625)); aspect-ratio: 9 / 16; margin: 0 auto; flex: 0 0 auto; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,.55); }
   .card img { display: block; width: 100%; height: 100%; }
   .btn { position: absolute; left: 11.11%; width: 77.78%; display: block; border-radius: 18px; }
   .btn:hover, .btn:focus { outline: 3px solid #35a9e1; outline-offset: 2px; }
@@ -25,6 +25,8 @@
   .store-btn.apple { background: #fff; color: #0b1e38; }
   .store-btn.google { background: #35a9e1; color: #fff; }
   .store-btn.wa { background: #25d366; color: #fff; }
+  .store-btn.yt { background: #FF0000; color: #fff; display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .store-btn.yt svg { flex: 0 0 auto; }
   .note { text-align: center; color: #8fa8c0; font-size: 13px; margin-top: 14px; }
 </style>
 </head>
@@ -41,6 +43,8 @@
     <a class="store-btn apple" href="https://apps.apple.com/app/taixi/id6830457220" target="_blank" rel="noopener">Descargar en App Store</a>
     <a class="store-btn google" href="https://play.google.com/store/apps/details?id=com.thetaixi.app" target="_blank" rel="noopener">Disponible en Google Play</a>
     <a class="store-btn wa" href="https://wa.me/12396012361" target="_blank" rel="noopener">WhatsApp (239) 601-2361</a>
+    <!-- BOTÓN YOUTUBE: enlace pendiente. Reemplazar href="#" por el enlace del canal de YouTube de Rivaldo -->
+    <a class="store-btn yt" href="#" aria-label="Ver videos de TAiXI en YouTube"><svg width="26" height="19" viewBox="0 0 28 20" aria-hidden="true"><path d="M27.4 3.1a3.5 3.5 0 0 0-2.5-2.5C22.7 0 14 0 14 0S5.3 0 3.1.6A3.5 3.5 0 0 0 .6 3.1 36.7 36.7 0 0 0 0 10a36.7 36.7 0 0 0 .6 6.9 3.5 3.5 0 0 0 2.5 2.5C5.3 20 14 20 14 20s8.7 0 10.9-.6a3.5 3.5 0 0 0 2.5-2.5A36.7 36.7 0 0 0 28 10a36.7 36.7 0 0 0-.6-6.9z" fill="#fff"/><path d="M11.2 14.3V5.7L18.5 10l-7.3 4.3z" fill="#FF0000"/></svg>Ver videos en YouTube</a>
   </div>
   <p class="note">TAiXI &middot; thetaixi.com &middot; Naples, Florida</p>
 </div>
